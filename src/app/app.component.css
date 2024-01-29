@@ -1,0 +1,39 @@
+.page-wrapper {
+    background-color: #2b303a;
+    min-height: 100vh;
+}
+
+.section {
+    min-height: 100vh;
+    color: #eee5e9;
+    padding: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#image mat-icon {
+    transform: rotate(45deg) scale(10);
+    color: #d64933;
+}
+
+#blurb {
+    font-size: 2rem;
+    text-align: right;
+}
+
+.emphasis {
+    font-weight: bold;
+    font-size: 3rem;
+    color: #d64933;
+}
+
+.understated {
+    color: #7c7c7c;
+}
