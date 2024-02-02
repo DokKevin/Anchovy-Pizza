@@ -6,7 +6,6 @@
 .section {
     min-height: 100vh;
     color: #eee5e9;
-    padding: 0 5vw;
     display: flex;
     justify-content: space-between;
 }
@@ -15,17 +14,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
+}
+
+#image {
+    width: 50vw;
 }
 
 #image mat-icon {
-    transform: rotate(45deg) scale(10);
+    transform: rotate(45deg) scale(10) translateY(.5vh);
     color: #d64933;
 }
 
 #blurb {
     font-size: 2rem;
     text-align: right;
+    justify-content: flex-end;
 }
 
 .emphasis {
@@ -37,3 +41,29 @@
 .understated {
     color: #7c7c7c;
 }
+
+@media screen and (max-width: 900px) {
+    .section {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    #blurb {
+        justify-content: center;
+    }
+
+    #image {
+        height: 50vh;
+        width: auto;
+    }
+    
+    #image mat-icon {
+        transform: rotate(45deg) scale(10) translate(1vw);
+    }
+
+    #blurb p {
+        margin: 0;
+        padding: 0 10vw;
+    }
+}
+  
